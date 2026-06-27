@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body {
+    background-color: #0f172a;
+    color: #E2E8F0;
+    font-family: 'segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+ }
+ header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-bottom: 4rem;
+ }
+ h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    font-weight: 700;
+ }
+ nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+ }
+ nav ul li a {
+    color: #94A3B8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+ } 
+ main section:first-of-type {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+ }
+ main section p {
+    font-size: 1.15rem;
+    color: #94A3B8;
+    max-width: 500px;
+ }
+ img {
+    max-width: 45%;
+    height: auto;
+ }
+h2 {
+    font-size: 1.75rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+section {
+    margin-bottom: 5rem;
+}
+#projetos {
+    display: flex;
+    gap: 2rem;
+}
+article {
+    background-color: #94A3B8;
+    padding: 2rem;
+    flex: 1;
+}
+article h3 {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+}
+article p {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+}
+article a {
+    color: #38BDF8;
+    text-decoration: none;
+    font-weight: 600;
+}
+form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #94A3B8;
+}
+textarea {
+    background-color: #111827;
+    color: #FFFFFF;
+    font-family: 'Segoe UI',arial, sans-serif;
+    padding: 1rem;
+    border: 1px solid #1E293B;
+    font-size: 1rem;
+    width: 100%;
+}
+input[type="submit"] {
+    background-color: #38bdf8;
+    color: #0B0F19;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    max-width: 200px;
+    margin-top: 1rem;
+}
+ol {
+    padding-left: 1.5rem;
+    color: #94A3B8;
+}
+ol li{
+    margin-bottom: 0.5rem;
+}
+@media (max-widht: 768px) {
+    main section:first-of-type, #projetos, header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    img {
+        max-width: 80%;
+    }
+    form {
+        max-width: 100%;
+    }
+}
