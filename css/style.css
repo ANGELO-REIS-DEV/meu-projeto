@@ -1,136 +1,211 @@
+:root {
+    --light-bg: #d8dde7;
+    --dark-color: #0f172a;
+    --white: #ffff;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
  }
  body {
-    background-color: #0f172a;
-    color: #E2E8F0;
-    font-family: 'segoe UI', Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+    font-family: 'segoe UI',  sans-serif;
     line-height: 1.6;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
  }
  header {
     display : flex;
+    background-color: var(--white);
+    padding: 1rem 5%;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
-    margin-bottom: 4rem;
  }
  h1 {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px #094e6b;
  }
  nav ul {
     display: flex;
     gap: 1.5rem;
     list-style: none;
  }
+ nav a{
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 600;
+ }
  nav ul li a {
-    color: #94A3B8;
+    color: var(--dark-color);
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
  } 
- main section:first-of-type {
+section  {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ #sobre-mim {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    margin-bottom: 5rem;
+    text-align: center;
+    margin: 0 auto 4rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
  }
- main section p {
-    font-size: 1.15rem;
-    color: #94A3B8;
-    max-width: 500px;
+ #sobre-mim h2 {
+    font-size: 1.75rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
  }
- img {
-    max-width: 45%;
-    height: auto;
+#sobre-mim img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ }
+ #sobre-mim p {
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    max-width: 600px;
+    line-height: 1.6;
  }
 h2 {
-    font-size: 1.75rem;
-    color: #FFFFFF;
-    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
-section {
-    margin-bottom: 5rem;
-}
-#projetos {
+.lista-habilidades {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+    padding: 0;
+    list-style: none;
+}
+.lista-habilidades li {
+    background-color: rgba(47, 187, 157, 0.5);
+    border: 2px solid rgba(255,255,255,0.15);
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 260px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dark-color);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.lista-habilidades li:hover {
+    transform: translatey(-5px);
+    border-color:  #0b0fff;
+}
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
 }
 article {
-    background-color: #94A3B8;
-    padding: 2rem;
-    flex: 1;
-}
-article h3 {
-    font-size: 1.25rem;
-    color: #FFFFFF;
-    margin-bottom: 0.75rem;
-}
-article p {
-    color: #94A3B8;
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
-}
-article a {
-    color: #38BDF8;
-    text-decoration: none;
-    font-weight: 600;
+    background-color: #ce9090;
+    padding: 30px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    border: #85a0db;
+    border-radius: 16px;
 }
 form {
-    max-width: 600px;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 550px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    border: 1px solid #094e6b;
+    box-shadow: 0 10px 25px #a6ff00;
 }
-form p {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: #94A3B8;
+form label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
-textarea {
-    background-color: #111827;
+form input, form textarea {
+    background-color: #8ebe89;
     color: #FFFFFF;
     font-family: 'Segoe UI',arial, sans-serif;
     padding: 1rem;
-    border: 1px solid #1E293B;
+    border: 1px solid #4b5a70;
     font-size: 1rem;
     width: 100%;
 }
-input[type="submit"] {
-    background-color: #38bdf8;
-    color: #0B0F19;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    font-weight: 700;
+select {
+    background-color: #85a0db;
+    color: #FFFFFF;
+    font-family: 'Segoe UI',arial, sans-serif;
+    padding: 1rem;
+    border: 1px solid #4b5a70;
+    font-size: 1rem;
+    width: 100%;
+}
+button {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 16px;
     border: none;
-    cursor: pointer;
-    max-width: 200px;
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px #38f848;
+
 }
-ol {
-    padding-left: 1.5rem;
-    color: #94A3B8;
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        padding: 1rem;
+    }
 }
-ol li{
-    margin-bottom: 0.5rem;
+#btn-tema {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #f3f3f3;
+    border-radius: 5px;
+    background-color: #0b0fff;
 }
-@media (max-widht: 768px) {
-    main section:first-of-type, #projetos, header {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-    }
-    img {
-        max-width: 80%;
-    }
-    form {
-        max-width: 100%;
-    }
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 4rem;
+    border-top: 3px solid #000000;
+    width: 100%;
+}
+footer p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+body.dark-theme {
+    --light-bg: #04060a;
+    --dark-color: #f1f5f9;
+    --white: #07090e;
+    --primary-color: #3b82f6;
+}
+body.dark-theme footer {
+    background-color: #020617;
+    color: #f1f5f9
 }

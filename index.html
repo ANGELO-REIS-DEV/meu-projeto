@@ -11,62 +11,55 @@
         <h1>angelo rafael</h1>
         <nav>
             <ul>
-                <li><a href="#sobre mim">sobre mim</a></li>
+                <li><a href="#sobre mim">sobre</a></li>
                 <li><a href="#habilidades">habilidades</a></li>
-                <li><a href="projetos">projetos</a></li>
-                <li><a href="contatos">contatos</a></li>
+                <li><a href="#projetos">projetos</a></li>
+                <li><a href="#contatos">contatos</a></li>
+                <li><buttom id="btn-tema">escuro</buttom></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="sobre mim">
+        <section id="sobre-mim">
             <h2>sobre mim</h2>
-            <img width="50%" src="pexels-laptop-1846277_1920.png" alt="imagem de tecnologia">
-            <p>eu escolhi esse curso para me aprofundar na tecnologia de front-end</p>
+            <img src="IMG_20251030_124906483_HDR.PNG.png" alt="minha imagem">
+            <p>adoro programação e sempre busco conhecer varias linguagens para fins de aprendizagem</p>
         </section>
         <section id="habilidades">
             <h2>habilidades</h2>
-            <ol>
-                <li>tenho habilidades basicas com o python</li>
-                <li>tenho habilidades com html e css</li>
-                <li>melhor integração em grupos</li>
+            <ol class="lista-habilidades">
+                <li>🐍tenho habilidades basicas com o python</li>
+                <li>🌐tenho habilidades basicas com html e css</li>
+                <li>🤝colabaração em equipes</li>
             </ol>    
         </section>
-        
         <section id="projetos">
-            <h2>projetos</h2>
-            <artricle>
+            <h2>meus projetos</h2>
+            <article>
                 <h3>projeto-01 portifolio</h3>
                 <p>meu primeiro projeto com HTML5</p>
                 <a href="https://github.com/" target="_blank" rel="noopener noreferrer">acessar no github</a>
-            </artricle>
-            
+            </article>
             <article>
                 <h3>projeto-02</h3>
                 <p>meu projeto com css</p>
                 <a href="https://github.com/" target="_blank" rel="nopener noreferrer">acessar no github</a>
             </article>
         </section>
-
         <section id="contatos">
             <h2>contatos</h2>
-            <form action="enviar.html" method="POST">
+            <form action="enviar.html" method="POST" id="formulario">
                 <label for="nome">nome:</label>
                 <input required id="nome" type="text" placeholder="digite seu nome.....">
                 <label for="e-mail">e-mail:</label>
                 <input required id="e-mail" type="e-mail" placeholder="digite seu e-mail">
-                <label for="asssuntos">assuntos:</label>
-                <select id="assuntos">
-                    <option value="0">selecione uma opção</option>
-                    <option value="1">duvidas</option>
-                    <option value="2">sugestões</option>
-                    <option  value="3">suporte</option>
-                </select>
-                <button type="submit">enviar button</button>
+                <label for="mensagens">mensagens:</label>
+                <textarea id="mensagens"></textarea>     
+                <button type="submit">enviar</button>
             </form>
         </section>
     </main>
-    <footer>2026 projeto integrador ifpi</footer>
+    <footer><p>@2026-projeto integrador ifpi desenvolvido por angelo rafael</p></footer>
+    <script src="js\1/script.js"></script>
 </body>
 </html>
